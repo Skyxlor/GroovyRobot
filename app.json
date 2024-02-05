@@ -1,0 +1,92 @@
+{
+    "name": "xᴅ ʀᴏʙᴏᴛ",
+    "description": "ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.",
+    "logo": "https://graph.org/file/97ec679cd7e3e146cd230.jpg",
+    "keywords": [
+       "telegram",
+       "modular",
+       "group",
+       "manager"
+    ],   
+ "repository": "https://github.com/ROCKY-D3V/XDRBOT",
+ "stack": "heroku-22",
+ "addons": [
+    {
+       "options": {
+          "version": "12"
+       },
+       "plan": "heroku-postgresql"
+    }
+ ],
+ "env": {
+    "API_ID": {
+       "description": "Get this value from my.telegram.org/apps.",
+       "required": true,
+       "value": "28630777"
+    },
+    "API_HASH": {
+       "description": "Get this value from my.telegram.org/apps.",
+       "required": true,
+       "value": "41962bd1035fcbd5c0243cec216a6e23"
+    },
+    "ALLOW_EXCL": {
+       "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
+       "value": "True"
+    },
+    "DEL_CMDS": {
+       "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+       "value": "True"
+    },
+    "ENV": {
+       "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+       "required": true,
+       "value": "True"
+    },
+    "EVENT_LOGS": {
+       "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+       "required": true,
+       "value": "-1001693853889"
+    },
+    "MONGO_DB_URI": {
+       "description": "Required for database connections.",
+       "required": true,
+       "value": "mongodb+srv://Alisha:Alisha123@cluster0.yqcpftw.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "CASH_API_KEY": {
+        " description": " Get your API key from https://www.alphavantage.co/support/#api-key",
+        "required": false,
+        "value": ""
+    },
+    "TIME_API_KEY": {
+        "description": " Get your API key from https://timezonedb.com/api",
+        "required": false,
+        "value": ""
+    },
+    "CHATBOT_API": {
+        "description":"Get your API key from @xᴅʙᴏᴛ using /token",
+        "required": false,
+        "value": ""
+    },
+        
+    "OWNER_ID": {
+       "description": "Your user ID as an integer.",
+       "required": true,
+       "value": "6545714937"
+    },
+    "START_IMG": {
+       "description": "Telegraph link of the image which will be shown at start command.",
+       "required": true,
+       "value": "https://graph.org/file/a1503f6a173c13523ecc3.jpg"
+    },
+    "SUPPORT_CHAT": {
+       "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - groovysupportt.",
+       "required": true,
+       "value": "groovy_supportt"
+    },
+    "TOKEN": {
+       "description": "Get bot token from @BotFather on TG",
+       "required": true,
+       "value": ""
+    }
+ }
+}
